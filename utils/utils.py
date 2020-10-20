@@ -218,7 +218,7 @@ def transform_to_same_length(x, n_var, max_length):
 
 
 def transform_mts_to_ucr_format():
-    mts_root_dir = './raw-data/mtsdata'
+    mts_root_dir = './raw-data/mtsdata/'
     mts_out_dir = './archives/mts_archive/'
     for dataset_name in MTS_DATASET_NAMES:
         # print('dataset_name',dataset_name)
