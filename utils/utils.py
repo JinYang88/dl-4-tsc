@@ -224,7 +224,7 @@ def transform_mts_to_ucr_format():
         # print('dataset_name',dataset_name)
 
         out_dir = mts_out_dir + dataset_name + '/'
-
+        os.makedirs(out_dir, exist_ok=True)
         # if create_directory(out_dir) is None:
         #     print('Already_done')
         #     continue
