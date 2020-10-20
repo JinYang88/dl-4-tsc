@@ -80,7 +80,7 @@ def create_classifier(classifier_name, input_shape, nb_classes, output_directory
 ############################################### main
 
 # change this directory for your machine
-root_dir = '/b/home/uha/hfawaz-datas/dl-tsc-temp/'
+root_dir = './'
 
 if sys.argv[1] == 'run_all':
     for classifier_name in CLASSIFIERS:
@@ -126,6 +126,7 @@ elif sys.argv[1] == 'generate_results_csv':
     res = generate_results_csv('results.csv', root_dir)
     print(res.to_string())
 else:
+    # python main.py mts_archive ArabicDigits resnet _itr_8
     # this is the code used to launch an experiment on a dataset
     archive_name = sys.argv[1]
     dataset_name = sys.argv[2]

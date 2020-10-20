@@ -198,7 +198,6 @@ def get_func_length(x_train, x_test, func):
 
 def transform_to_same_length(x, n_var, max_length):
     n = x.shape[0]
-
     # the new set in ucr form np array
     ucr_x = np.zeros((n, max_length, n_var), dtype=np.float64)
 
@@ -219,8 +218,8 @@ def transform_to_same_length(x, n_var, max_length):
 
 
 def transform_mts_to_ucr_format():
-    mts_root_dir = '/mnt/Other/mtsdata/'
-    mts_out_dir = '/mnt/nfs/casimir/archives/mts_archive/'
+    mts_root_dir = './raw-data/mtsdata'
+    mts_out_dir = './archives/mts_archive/'
     for dataset_name in MTS_DATASET_NAMES:
         # print('dataset_name',dataset_name)
 
